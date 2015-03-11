@@ -1,0 +1,19 @@
+<head>
+  <title>graph</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> graph}}
+</body>
+
+<template name="graph">
+  <table>
+    {{#each data}}
+    <tr><th>{{name}}</th><td>{{value}}</td></tr>
+    {{/each}}
+  </table>
+  <div id="chart"></div>
+
+</template>
